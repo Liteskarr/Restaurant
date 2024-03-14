@@ -1,0 +1,16 @@
+spring:
+  mvc.view.suffix: .html
+  datasource:
+    url: jdbc:postgresql://localhost:5432/restaurant
+    driver-class-name: org.postgresql.Driver
+    username: admin
+    password: admin
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties.hibernate:
+      show_sql: false
+      format_sql: false
+      dialect: org.hibernate.dialect.PostgreSQLDialect
+springdoc:
+  enable-spring-security: false
